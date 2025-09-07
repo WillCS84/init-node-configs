@@ -2,8 +2,9 @@
   "compilerOptions": {
     "target": "es2024",
     "module": "commonjs",
-    "lib": ["DOM", "ESNext"],
+    "lib": ["ESNext", "DOM"],
     "outDir": "./dist",
+    "rootDir": "./src",
     "removeComments": true,
     "noEmitOnError": true,
     "strict": true,
@@ -11,5 +12,11 @@
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true
   },
-  "include": ["./src"]
+   "include": [
+    "src/**/*" // Inclua todos os arquivos na pasta src
+  ],
+   "exclude": [
+    "node_modules",
+    "dist"
+  ]
 }
