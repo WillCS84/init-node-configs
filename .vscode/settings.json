@@ -1,11 +1,12 @@
 {
   "window.zoomLevel": -1,
   "code-runner.executorMap": {
-    "typescript": "clear && npx ts-node --files --transpile-only"   
+    "typescript": "cls && npx ts-node --files --transpile-only"
   },
   "editor.formatOnSave": true,
+  "editor.defaultFormatter": "dbaeumer.vscode-eslint",
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit",
-    "source.fixAll": "explicit"
-  } 
+    "source.fixAll.eslint": "always",
+    "source.fixAll": "always"
+  }
 }
